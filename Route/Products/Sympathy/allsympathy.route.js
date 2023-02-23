@@ -8,7 +8,7 @@ const allsympathyRouter = express.Router();
 allsympathyRouter.get("/", async(req, res)=>{
     try {
         const data = await AllsympathyModel.find();
-        res.send(data);
+        res.send(data)
     } 
     catch(err){
         res.send(err.message);
